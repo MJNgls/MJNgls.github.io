@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #afffaf, #9af8ff);
+}
+
+.palindrome-app {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.palindrome-app h1 {
+  text-align: center;
+  color: #ffa19a;
+}
+
+.input-box {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px; /* Change the font size here */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: 10px; /* Add some space above the buttons */
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffa19a;
+  color: white;
+  cursor: pointer;
+  margin: 0 5px; /* Equal spacing on both sides of the button */
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff8c85;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.2em;
+  text-align: center;
+  color: #333;
+}

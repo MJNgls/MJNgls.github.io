@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Calculator App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Calculator App</h1>
+      </header>
+
+      <!-- Main section for the calculator -->
+      <section class="calculator">
+        <!-- Form for input and buttons -->
+        <form>
+          <!-- Calculator display -->
+          <input
+            type="text"
+            id="display"
+            readonly
+            aria-label="Calculator Display"
+          />
+
+          <!-- Buttons container -->
+          <!-- Add a CE button to the existing buttons -->
+          <div class="button-container">
+            <button type="button" value="1" aria-label="1">1</button>
+            <button type="button" value="2" aria-label="2">2</button>
+            <button type="button" value="3" aria-label="3">3</button>
+            <button type="button" value="4" aria-label="4">4</button>
+            <button type="button" value="5" aria-label="5">5</button>
+            <button type="button" value="6" aria-label="6">6</button>
+            <button type="button" value="7" aria-label="7">7</button>
+            <button type="button" value="8" aria-label="8">8</button>
+            <button type="button" value="9" aria-label="9">9</button>
+            <button type="button" value="0" aria-label="0">0</button>
+
+            <!-- Math operation buttons -->
+            <button type="button" value="+" aria-label="Addition">+</button>
+            <button type="button" value="-" aria-label="Subtraction">-</button>
+            <button type="button" value="*" aria-label="Multiplication">
+              *
+            </button>
+            <button type="button" value="/" aria-label="Division">/</button>
+            <button type="button" value="=" aria-label="Equals">=</button>
+
+            <!-- Add the CE (Clear Everything) button -->
+            <button type="button" value="CE" aria-label="Clear Everything">
+              CE
+            </button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
