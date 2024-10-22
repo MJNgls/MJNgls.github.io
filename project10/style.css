@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-width: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #135677, #4e085f);
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.todo-app h2 {
+  color: #002765;
+  display: flex;
+  align-items: center; /* This vertically centers the icon and text */
+  margin-bottom: 20px;
+}
+
+.todo-app h2 img {
+  width: 24px; /* Adjust size to fit better */
+  height: auto;
+  margin-left: 10px;
+  vertical-align: middle; /* Ensure the icon aligns with the text baseline */
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 18px; /* Adjust font size to make the cursor and text larger */
+}
+
+input::placeholder {
+  font-size: 16px; /* Adjust this value as needed */
+  color: #888; /* Optional: You can change the color as well */
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 40px; /* Reduce left padding for better alignment */
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  display: flex; /* Use flex to ensure alignment between the icon and text */
+  align-items: center; /* Vertically align items */
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 20px; /* Adjust size */
+  width: 20px; /* Adjust size */
+  border-radius: 50%;
+  background-image: url(images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 50%; /* Centers the icon vertically */
+  left: 8px; /* Adjust to ensure proper spacing */
+  transform: translateY(-50%); /* Perfectly centers the circle vertically */
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(images/checked.png); /* Toggle checked image */
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%); /* Centers the "×" icon vertically */
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background: #edeef0;
+}
